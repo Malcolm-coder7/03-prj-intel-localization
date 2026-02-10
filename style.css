@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	font-family: "Source Sans 3", sans-serif;
+	color: #111111;
+	background-color: #f8f9fa;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+	font-family: "Space Grotesk", sans-serif;
+}
+
+.skip-link {
+	position: absolute;
+	left: 1rem;
+	top: -3rem;
+	background: #111111;
+	color: #ffffff;
+	padding: 0.5rem 1rem;
+	border-radius: 999px;
+	text-decoration: none;
+	transition: top 0.2s ease;
+	z-index: 20;
+}
+
+.skip-link:focus {
+	top: 1rem;
+}
+
+/* Hero background with a light overlay for readable black text */
+.hero {
+	position: relative;
+	background-image: url("https://cdn.wccftech.com/wp-content/uploads/2022/09/13th-Gen-Intel-Core-2.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #0b0b0b;
+	text-align: center;
+}
+
+.hero::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(248, 249, 250, 0.88);
+}
+
+.hero > * {
+	position: relative;
+	z-index: 1;
+}
+
+.hero-content {
+	max-width: 720px;
+	padding: 4.5rem 1rem 5rem;
+}
+
+.hero-eyebrow {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 0.85rem;
+	margin-bottom: 1rem;
+}
+
+.hero-title {
+	font-size: clamp(3.5rem, 12vw, 7rem);
+	font-weight: 800;
+	letter-spacing: 0.02em;
+	margin-bottom: 1rem;
+}
+
+.hero-lead {
+	font-size: clamp(1.1rem, 3.2vw, 1.6rem);
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+}
+
+/* Shared spacing for main sections */
+.section-pad {
+	padding: 4rem 0;
+}
+
+.section-heading {
+	max-width: 640px;
+	margin: 0 auto 2.5rem;
+	text-align: center;
+}
+
+.section-title {
+	font-size: clamp(2rem, 5vw, 3rem);
+	margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+	font-size: 1.1rem;
+	color: #333333;
+}
+
+.card-img-top {
+	height: 190px;
+	object-fit: cover;
+}
+
+.section-accent {
+	background: #ffffff;
+}
+
+/* Initiative cards */
+.info-card {
+	background: #ffffff;
+	border-radius: 1rem;
+	padding: 2rem;
+	box-shadow: 0 12px 30px rgba(17, 17, 17, 0.08);
+	text-align: center;
+}
+
+.icon-circle {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	background: #111111;
+	color: #ffffff;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.form-card {
+	border: none;
+	box-shadow: 0 12px 30px rgba(17, 17, 17, 0.1);
+}
+
+.site-footer {
+	background: #0f1115;
+	color: #f8f9fa;
+	padding: 2rem 0;
+}
+
+.footer-link {
+	color: #f8f9fa;
+	text-decoration: none;
+}
+
+.footer-link:focus,
+.footer-link:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	.hero-content {
+		padding: 3.5rem 1rem 4rem;
+	}
+
+	.info-card {
+		text-align: start;
+	}
+}
